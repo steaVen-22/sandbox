@@ -1,10 +1,10 @@
 name: Hello, Actions!
-on: push
+on: pull_request
 
 jobs:
   build:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@feature/test_1_20200626
+      - uses: actions/checkout@v1
       - run: echo "Hello, Actions!"
