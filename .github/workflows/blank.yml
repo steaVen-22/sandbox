@@ -1,9 +1,10 @@
-name: Hello, World!
+name: Hello, Actions!
 on: push
 
 jobs:
   build:
-    name: Greeting
-    runs-on: macos-latest
+    name: Test
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, World!"
+      - uses: actions/checkout@feature/test_1_20200626
+      - run: echo "Hello, Actions!"
